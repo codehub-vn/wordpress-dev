@@ -12,6 +12,7 @@ function ju_save_options() {
     $opts['facebook'] = sanitize_text_field($_POST['ju_inputFacebook']);
     $opts['youtube'] = sanitize_text_field($_POST['ju_inputYoutube']);
     $opts['logo_type'] = absint($_POST['ju_inputLogoType']);
+    $opts['logo_img'] = esc_url($_POST['ju_inputLogoImg']);
     $opts['footer'] = $_POST['ju_inputFooter'];
 
     update_option('ju_opts', $opts);

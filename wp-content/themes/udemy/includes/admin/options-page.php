@@ -45,6 +45,12 @@ function ju_theme_opts_page() {
                         <option value="2"<?= $theme_options['logo_type'] == 2 ? 'selected' : '' ?>><?php _e('Image', 'udemy'); ?></option>
                     </select>
                 </div>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Logo Image" name="ju_inputLogoImg" value="<?= $theme_options['logo_img']; ?>">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button" id="ju_uploadLogoImgBtn"><?= _e('Upload', 'udemy'); ?></button>
+                    </span>
+                </div>
                 <h4><?php _e('Footer', 'udemy'); ?></h4>
                 <div class="form-group">
                     <label for="ju_inputFooter">

@@ -1,3 +1,6 @@
+<?php
+$theme_options = get_option('ju_opts');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,8 +29,15 @@
             ]);
             ?>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <?php if (!empty($theme_options['twitter'])): ?>
+                    <li><a href="https://twitter.com/<?= $theme_options['twitter']; ?>"><i class="fa fa-twitter"></i></a></li>
+                <?php endif; ?>
+                <?php if (!empty($theme_options['facebook'])): ?>
+                    <li><a href="https://facebook.com/<?= $theme_options['facebook']; ?>"><i class="fa fa-facebook"></i></a></li>
+                <?php endif; ?>
+                <?php if (!empty($theme_options['youtube'])): ?>
+                    <li><a href="https://youtube.com/<?= $theme_options['youtube']; ?>"><i class="fa fa-youtube"></i></a></li>
+                <?php endif; ?>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

@@ -7,5 +7,6 @@ function ju_admin_enqueue() {
     wp_enqueue_style('ju_bootstrap');
 
     wp_register_script('ju_options', get_template_directory_uri().'/assets/scripts/options.js', [], false, true);
+    wp_enqueue_media();
     wp_enqueue_script('ju_options');
 }
