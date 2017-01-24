@@ -21,6 +21,7 @@ function r_filter_recipe_content($content) {
     $recipe_html = str_replace('LEVEL_I18N', __('Level', 'recipe'), $recipe_html);
     $recipe_html = str_replace('TYPE_I18N', __('Type', 'recipe'), $recipe_html);
     $recipe_html = str_replace('RATE_I18N', __('Rate', 'recipe'), $recipe_html);
+    $recipe_html = str_replace('RATE_ID', $post->ID, $recipe_html);
 
     return $recipe_html . $content;
 }

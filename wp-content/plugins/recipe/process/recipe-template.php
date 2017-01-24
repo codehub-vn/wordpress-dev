@@ -13,6 +13,7 @@
     </li>
     <li>
         <strong>RATE_I18N:</strong>
-        <div id="recipe_rating" class="rateit" date-rateit-resetable="false" data-rid="RECIPE_ID" data-rateit-value="RECIPE_RATING" READONLY_PLACEHOLDER></div>
+        <div id="recipe_rating" class="rateit" date-rateit-resetable="false" data-rid="RECIPE_ID"
+             data-rateit-value="RECIPE_RATING" READONLY_PLACEHOLDER></div>
     </li>
 </ul>

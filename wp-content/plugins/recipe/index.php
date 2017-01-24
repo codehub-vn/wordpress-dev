@@ -26,6 +26,8 @@ include('includes/admin/init.php');
 include('process/save-post.php');
 include('process/filter-content.php');
 
+include('includes/front/enqueue.php');
+
 // Hooks
 register_activation_hook(__FILE__, 'r_activate_plugin');
 
@@ -36,5 +38,7 @@ add_action('admin_init', 'recipe_admin_init');
 add_action('save_post_recipe', 'r_save_post_admin', 10, 3);
 
 add_filter('the_content', 'r_filter_recipe_content');
+
+add_action('wp_enqueue_scripts', 'r_enqueue', 9999);
 
 // Shortcode
