@@ -10,9 +10,11 @@ include(get_template_directory().'/includes/front/enqueue.php');
 include(get_template_directory().'/includes/setup.php');
 include(get_template_directory().'/includes/widgets.php');
 include(get_template_directory().'/includes/activate.php');
+
 include(get_template_directory().'/includes/admin/menus.php');
 include(get_template_directory().'/includes/admin/options-page.php');
 include(get_template_directory().'/includes/admin/init.php');
+
 include(get_template_directory().'/includes/process/save_options.php');
 
 // Actions & Filter Hooks
