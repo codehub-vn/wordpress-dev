@@ -27,4 +27,5 @@ add_action('after_switch_theme', 'ju_activate');
 
 add_action('admin_menu', 'ju_admin_menus');
 add_action('admin_init', 'ju_admin_init');
+
 // Shortcodes
